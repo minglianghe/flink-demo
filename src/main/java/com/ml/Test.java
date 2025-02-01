@@ -27,6 +27,7 @@ public class Test {
         DataStreamSource<String> kafka_source = env.fromSource(source, WatermarkStrategy.noWatermarks(), "Kafka Source");
 
 
+        //print
         kafka_source.print();
 
         env.execute();
